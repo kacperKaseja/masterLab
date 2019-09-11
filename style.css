@@ -1,0 +1,93 @@
+/* Style Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url('/1/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header Section CSS */
+
+header {
+    text-align: center;
+}
+
+.header_logo {
+    width: 70%;
+    margin: 30px auto;
+    opacity: 0.5;
+}
+
+/* End of Header Section */
+
+
+/* Styles Flex Column whit form */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 1px 1px rgb(94, 94, 94);
+    margin: 10px;
+}
+
+.form-wrapper {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form {
+    background-color: rgb(252, 251, 250);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input-wrapper {
+
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid rgb(211, 210, 210);
+    display: flex;
+}
+
+label {
+    text-align: center;
+    padding: 5px 12px;
+    border-right: 1px solid rgb(211, 210, 210);
+}
+
+i {
+    color: rgb(211, 210, 210);
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+
+input,
+select {
+    border: none;
+    margin-left: 10px;
+    color: rgb(119, 119, 119);
+    font-size: 18px;
+    width: 80%;
+    padding: 5px 5px;
+}
+
+input::placeholder {
+    color: rgb(211, 210, 210);
+}
