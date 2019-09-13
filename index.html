@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weekkly WebDev Challenge - 1</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -40,15 +41,15 @@
                     <div class="input-wrapper">
                         <label for="location"><i class="fas fa-map-marker-alt"></i></label>
                         <select name="" id="location">
-                            <option value="">Your location</option>
+                            <option class="first-option" value="" disabled selected>Your location</option>
                             <option value="Kraków">Kraków</option>
                             <option value="Warszawa">Warszawa</option>
                             <option value="Wrocław">Wrocław</option>
                             <option value="Poznań">Poznań</option>
                         </select>
                     </div>
-                    <div class="input-wrapper">
-                        <input type="checkbox" id="checkbox-1">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" class="checkbox-input" id="checkbox-1">
                         <label for="checkbox-1" class="checkbox-label">I have read and accept the terms of use.</label>
                     </div>
                     <input type="submit" value="Send">

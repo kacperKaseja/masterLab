@@ -3,6 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --checkbox-size: 25px;
+    --checkbox-size-checked: 20px;
 }
 
 
@@ -43,6 +49,7 @@ h2 {
     margin: 10px;
 }
 
+/* Styling  wrapper for forms on page */
 .form-wrapper {
     width: 90%;
     background-color: rgba(0, 0, 0, 0.3);
@@ -57,7 +64,6 @@ form {
 }
 
 .input-wrapper {
-
     width: 90%;
     margin: 10px auto;
     padding: 10px;
@@ -65,7 +71,7 @@ form {
     display: flex;
 }
 
-label {
+.input-wrapper label {
     text-align: center;
     padding: 5px 12px;
     border-right: 1px solid rgb(211, 210, 210);
@@ -78,7 +84,7 @@ i {
 }
 
 
-input,
+.input-wrapper input,
 select {
     border: none;
     margin-left: 10px;
@@ -88,6 +94,43 @@ select {
     padding: 5px 5px;
 }
 
-input::placeholder {
+input::placeholder,
+select,
+select:required:invalid {
     color: rgb(211, 210, 210);
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+option {
+    color: black
+}
+
+/* Styling custom checkbox change of tick sign to squere */
+.checkbox-wrapper {
+    width: 90%;
+    margin: 10px auto;
+}
+
+input[type^="checkbox"] {
+    position: relative;
+    -webkit-appearance: none;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    background: rgb(39, 207, 39);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
