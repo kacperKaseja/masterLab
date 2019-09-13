@@ -15,9 +15,6 @@
         <img src="img/logo.png" alt="logo" class="header_logo">
     </header>
     <main>
-
-
-
         <div class="column">
             <h2>Register Form</h2>
             <div class="form-wrapper">
@@ -55,7 +52,29 @@
                     <button>Sing Up</button>
                 </form>
             </div>
-            <h2>Register Form</h2>
+            <h2>Send Email</h2>
+            <div class="form-wrapper">
+                <form action="">
+                    <div class="input-wrapper">
+                        <label for="your-name"><i class="fas fa-user"></i></label>
+                        <input type="text" id="your-name" placeholder="Your Name">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email"><i class="fas fa-envelope"></i></label>
+                        <input type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" class="checkbox-input" id="checkbox-1">
+                        <label for="checkbox-1" class="checkbox-label">Send a copy to my Email</label>
+                    </div>
+
+                    <button>Send Email</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Sign In Form</h2>
             <div class="form-wrapper">
                 <form action="">
                     <div class="input-wrapper">
@@ -66,31 +85,46 @@
                         <label for="password"><i class="fas fa-lock"></i></label>
                         <input type="password" id="password" placeholder="Password">
                     </div>
-                    <div class="input-wrapper">
-                        <label for="confirm-password"><i class="fas fa-lock"></i></label>
-                        <input type="password" id="confirm-password" placeholder="Confirm Password">
+                    <div class="last-wrapper">
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" class="checkbox-input" id="checkbox-1">
+                            <label for="checkbox-1" class="checkbox-label">Remember Me</label>
+                        </div>
+                        <button>Sing Up</button>
                     </div>
+                </form>
+            </div>
+            <h2>Recover Form</h2>
+            <div class="form-wrapper">
+                <form action="">
                     <div class="input-wrapper">
                         <label for="email"><i class="fas fa-envelope"></i></label>
                         <input type="email" id="email" placeholder="Email">
                     </div>
                     <div class="input-wrapper">
-                        <label for="location"><i class="fas fa-map-marker-alt"></i></label>
-                        <select name="" id="location">
-                            <option class="first-option" value="" disabled selected>Your location</option>
-                            <option value="Kraków">Kraków</option>
-                            <option value="Warszawa">Warszawa</option>
-                            <option value="Wrocław">Wrocław</option>
-                            <option value="Poznań">Poznań</option>
-                        </select>
+                        <label for="phone"><i class="fas fa-mobile-alt"></i></label>
+                        <input type="text" id="phone" placeholder="Phone number">
                     </div>
-                    <div class="checkbox-wrapper">
-                        <input type="checkbox" class="checkbox-input" id="checkbox-1">
-                        <label for="checkbox-1" class="checkbox-label">I have read and accept the terms of use.</label>
+                    <div class="last-wrapper">
+                        <button>Send</button>
+                        <button>Done</button>
                     </div>
-                    <button>Sing Up</button>
                 </form>
             </div>
+            <h2>Subscribe Form</h2>
+            <div class="form-wrapper">
+                <form action="">
+                    <div class="input-wrapper">
+                        <label for="email"><i class="fas fa-envelope"></i></label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="last-wrapper">
+                        <button>Subscribe</button>
+                        <button class="red-button">No, Thanks</button>
+                    </div>
+                </form>
+            </div>
+            <img src="img/logowww.png" alt="logo-web" class="web-logo">
         </div>
     </main>
     <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-replace-svg="nest"></script>

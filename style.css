@@ -63,7 +63,8 @@ form {
     border-radius: 5px;
 }
 
-.input-wrapper {
+.input-wrapper,
+textarea {
     width: 90%;
     margin: 10px auto;
     padding: 10px;
@@ -95,7 +96,8 @@ select {
 
 input::placeholder,
 select,
-select:required:invalid {
+select:required:invalid,
+textarea::placeholder {
     color: var(--gray-white);
 }
 
@@ -147,4 +149,15 @@ button {
     color: white;
     text-shadow: 2px 2px black;
     border: 1px solid rgb(33, 145, 33);
+}
+
+.red-button {
+    background-color: rgb(253, 71, 71);
+    border: 1px solid rgb(209, 24, 24);
+}
+
+.web-logo {
+    width: 90%;
+    margin: 10px 0 30px 0;
+    opacity: 0.5;
 }
