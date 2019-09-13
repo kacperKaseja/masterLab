@@ -8,7 +8,8 @@
 
 :root {
     --checkbox-size: 25px;
-    --checkbox-size-checked: 20px;
+    --gray-white: rgb(211, 210, 210);
+    --green-color: rgb(49, 209, 49);
 }
 
 
@@ -32,8 +33,6 @@ header {
 }
 
 /* End of Header Section */
-
-
 /* Styles Flex Column whit form */
 
 .column {
@@ -55,6 +54,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 50px;
 }
 
 form {
@@ -67,22 +67,21 @@ form {
     width: 90%;
     margin: 10px auto;
     padding: 10px;
-    border: 1px solid rgb(211, 210, 210);
+    border: 1px solid var(--gray-white);
     display: flex;
 }
 
 .input-wrapper label {
     text-align: center;
     padding: 5px 12px;
-    border-right: 1px solid rgb(211, 210, 210);
+    border-right: 1px solid var(--gray-white);
 }
 
 i {
-    color: rgb(211, 210, 210);
+    color: var(--gray-white);
     font-size: 18px;
     padding: 5px 0;
 }
-
 
 .input-wrapper input,
 select {
@@ -97,7 +96,7 @@ select {
 input::placeholder,
 select,
 select:required:invalid {
-    color: rgb(211, 210, 210);
+    color: var(--gray-white);
 }
 
 option[value=""][disabled] {
@@ -126,11 +125,26 @@ input[type^="checkbox"] {
 input[type="checkbox"]:checked::after {
     content: "";
     display: block;
-    background: rgb(39, 207, 39);
+    background: var(--green-color);
     width: 10px;
     height: 10px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* Styling submint button */
+
+button {
+    width: 90%;
+    font-size: 24px;
+    padding: 10px;
+    display: block;
+    background-color: var(--green-color);
+    margin: 10px auto;
+    border-radius: 3px;
+    color: white;
+    text-shadow: 2px 2px black;
+    border: 1px solid rgb(33, 145, 33);
 }
