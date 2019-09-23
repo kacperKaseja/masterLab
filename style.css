@@ -9,7 +9,7 @@
 :root {
     --checkbox-size: 25px;
     --gray-white: rgb(211, 210, 210);
-    --green-color: rgb(49, 209, 49);
+    --green-color: rgb(68, 216, 68);
 }
 
 
@@ -91,9 +91,9 @@ select {
     margin-left: 10px;
     color: rgb(119, 119, 119);
     background-color: rgb(252, 251, 250);
-    ;
+
     font-size: 18px;
-    width: 80%;
+    width: 100%;
     padding: 5px 5px;
 }
 
@@ -104,9 +104,7 @@ textarea::placeholder {
     color: var(--gray-white);
 }
 
-select {
-    width: 100%;
-}
+select {}
 
 option[value=""][disabled] {
     display: none;
