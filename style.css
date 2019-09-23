@@ -39,6 +39,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -54,7 +55,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 form {
@@ -89,6 +90,8 @@ select {
     border: none;
     margin-left: 10px;
     color: rgb(119, 119, 119);
+    background-color: rgb(252, 251, 250);
+    ;
     font-size: 18px;
     width: 80%;
     padding: 5px 5px;
@@ -99,6 +102,10 @@ select,
 select:required:invalid,
 textarea::placeholder {
     color: var(--gray-white);
+}
+
+select {
+    width: 100%;
 }
 
 option[value=""][disabled] {
@@ -170,6 +177,7 @@ button {
 
     .column {
         width: 90%;
+        justify-content: space-between;
     }
 
     .header_logo {
@@ -179,6 +187,15 @@ button {
     .form-wrapper {
         width: 90%;
     }
+
+    .twoBtn {
+        display: flex;
+    }
+
+    .twoBtn button {
+        width: 40%;
+    }
+
 }
 
 @media(min-width: 1024px) {
