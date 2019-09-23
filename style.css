@@ -90,6 +90,7 @@ select {
     margin-left: 10px;
     color: rgb(119, 119, 119);
     font-size: 18px;
+    background-color: transparent;
     width: 80%;
     padding: 5px 5px;
 }
@@ -172,6 +173,16 @@ button {
         width: 90%;
     }
 
+    .col1 .form-wrapper {
+        height: 50%;
+        display: flex;
+    }
+
+    .col1 form {
+        width: 100%;
+
+    }
+
     .header_logo {
         width: 50%;
     }
@@ -185,3 +196,4 @@ button {
     .column {
         max-width: 600px;
     }
+}
