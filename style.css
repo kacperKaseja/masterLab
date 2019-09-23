@@ -104,8 +104,6 @@ textarea::placeholder {
     color: var(--gray-white);
 }
 
-select {}
-
 option[value=""][disabled] {
     display: none;
 }
