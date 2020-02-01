@@ -18,26 +18,26 @@
         <div class="column col1">
             <h2>Register Form</h2>
             <div class="form-wrapper">
-                <form action="">
+                <form>
                     <div class="input-wrapper">
                         <label for="username"><i class="fas fa-user"></i></label>
-                        <input type="text" id="username" placeholder="Username">
+                        <input type="text" id="username" placeholder="Username" required>
                     </div>
                     <div class="input-wrapper">
                         <label for="password"><i class="fas fa-lock"></i></label>
-                        <input type="password" id="password" placeholder="Password">
+                        <input type="password" id="password" placeholder="Password" required>
                     </div>
                     <div class="input-wrapper">
                         <label for="confirm-password"><i class="fas fa-lock"></i></label>
-                        <input type="password" id="confirm-password" placeholder="Confirm Password">
+                        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
                     </div>
                     <div class="input-wrapper">
                         <label for="email"><i class="fas fa-envelope"></i></label>
-                        <input type="email" id="email" placeholder="Email">
+                        <input type="email" id="email" placeholder="Email" required>
                     </div>
                     <div class="input-wrapper">
                         <label for="location"><i class="fas fa-map-marker-alt"></i></label>
-                        <select name="" id="location">
+                        <select name="location" id="location" required>
                             <option class="first-option" value="" disabled selected>Your location</option>
                             <option value="Kraków">Kraków</option>
                             <option value="Warszawa">Warszawa</option>
@@ -46,7 +46,7 @@
                         </select>
                     </div>
                     <div class="checkbox-wrapper">
-                        <input type="checkbox" class="checkbox-input" id="checkbox-1">
+                        <input type="checkbox" class="checkbox-input" id="checkbox-1" required>
                         <label for="checkbox-1" class="checkbox-label">I have read and accept the terms of use.</label>
                     </div>
                     <button>Sing Up</button>
@@ -105,7 +105,7 @@
                         <label for="phone"><i class="fas fa-mobile-alt"></i></label>
                         <input type="text" id="phone" placeholder="Phone number">
                     </div>
-                    <div class="last-wrapper">
+                    <div class="last-wrapper twoBtn">
                         <button>Send</button>
                         <button>Done</button>
                     </div>
@@ -118,7 +118,7 @@
                         <label for="subscribe-email"><i class="fas fa-envelope"></i></label>
                         <input type="email" id="subscribe-email" placeholder="Email">
                     </div>
-                    <div class="last-wrapper">
+                    <div class="last-wrapper twoBtn last">
                         <button>Subscribe</button>
                         <button class="red-button">No, Thanks</button>
                     </div>
