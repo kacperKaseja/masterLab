@@ -119,6 +119,7 @@ option {
     margin: 10px auto;
 }
 
+
 input[type^="checkbox"] {
     position: relative;
     -webkit-appearance: none;
@@ -138,6 +139,12 @@ input[type="checkbox"]:checked::after {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+#phone::-webkit-inner-spin-button,
+#phone::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
 
 /* Styling submint button */
